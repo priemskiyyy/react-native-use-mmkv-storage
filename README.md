@@ -1,6 +1,6 @@
 # react-native-use-mmkv-storage
 
-hook to use mmkv storage
+A React hook for managing storage using MMKV.
 
 ## Installation
 
@@ -10,15 +10,13 @@ npm install react-native-use-mmkv-storage
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-use-mmkv-storage';
+import useMMKVStorage from 'react-native-use-mmkv-storage';
 
-// ...
+const [value, setValue] = useMMKVStorage('userToken', '');
 
-const result = await multiply(3, 7);
+setValue('newToken');
 ```
-
 
 ## Contributing
 
